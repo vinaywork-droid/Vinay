@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
-import { ArrowDownRight, ArrowUpRight, Github, Linkedin, Mail, Menu, X, MessageCircle, Send, Sparkles, Database, ChartNoAxesCombined, Workflow, ChevronRight } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight, CodeXml, BriefcaseBusiness, Mail, Menu, X, MessageCircle, Send, Sparkles, Database, ChartNoAxesCombined, Workflow, ChevronRight } from "lucide-react";
 import "./styles.css";
 
 const profile = {
@@ -131,7 +131,9 @@ function App() {
 
       <section className="skills-section" id="skills"><div className="section-wrap"><div className="section-heading"><div><p className="eyebrow">04 / TOOLKIT</p><h2>Tools I use.<br/><em>Skills I’m building.</em></h2></div><p className="section-note">A growing toolkit for turning raw information into useful business insight. I’m still learning, and I try to make each project stretch my skills.</p></div><div className="skills-grid">{skills.map((s, i) => <div className="skill-item" key={s.title}><span>0{i+1}</span><h3>{s.title}</h3><p>{s.items}</p></div>)}</div></div></section>
 
-      <section className="contact-section" id="contact"><div className="section-wrap contact-inner"><p className="eyebrow">05 / START A CONVERSATION</p><h2>Have a question,<br/><em>idea, or opportunity?</em></h2><p>I’m always happy to talk about business problems, analytics projects, and opportunities to learn or collaborate.</p><a className="button button-lime" href={`mailto:${profile.email}`}>Email Vinay <ArrowUpRight size={17}/></a><div className="social-links"><a href={profile.linkedin} target="_blank" rel="noreferrer"><Linkedin size={16}/> LinkedIn <ArrowUpRight size={13}/></a><a href={profile.github} target="_blank" rel="noreferrer"><Github size={16}/> GitHub <ArrowUpRight size={13}/></a><a href={`mailto:${profile.email}`}><Mail size={16}/> Email <ArrowUpRight size={13}/></a></div></div></section>
+      <section className="contact-section" id="contact"><div className="section-wrap contact-inner"><p className="eyebrow">05 / START A CONVERSATION</p><h2>Have a question,<br/><em>idea, or opportunity?</em></h2><p>I’m always happy to talk about business problems, analytics projects, and opportunities to learn or collaborate.</p><a className="button button-lime" href={`mailto:${profile.email}`}>Email Vinay <ArrowUpRight size={17}/></a>
+<div className="social-links"><a href={profile.linkedin} target="_blank" rel="noreferrer"><BriefcaseBusiness size={16}/> LinkedIn <ArrowUpRight size={13}/></a><a href={profile.github} target="_blank" rel="noreferrer"><CodeXml size={16}/> GitHub <ArrowUpRight size={13}/></a><a href={`mailto:${profile.email}`}><Mail size={16}/> Email <ArrowUpRight size={13}/></a></div>
+      </div></section>
     </main>
 
     <footer className="site-footer"><a href="#top" className="footer-brand">VW <span>VINAY WAKADKAR</span></a><p>Built with curiosity, not a template.</p><span>© {currentYear} VINAY WAKADKAR</span></footer>
